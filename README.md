@@ -4,11 +4,11 @@ A responsive independent-maker storefront with a cream, cherry-red, and pink pal
 
 ## Develop
 
-Run `npm run dev` and open http://localhost:4173. No dependency installation or build is required. Run `npm run check` for JavaScript syntax checks. Deploy `dist/` to any static host.
+Run `npm run dev` for local development. The Vinext/Cloudflare server serves the storefront and a D1-backed `/api/votes` endpoint. Source lives in `public/`, `app/`, and `db/`; `dist/` is generated. Build with the Sites build helper. Apply migrations before using votes in a local preview.
 
 ## Connect Shopify
 
-The site currently presents a clearly labeled preview collection without prices or purchasable inventory. In `dist/config.js`, set the shop's `something.myshopify.com` domain and **public Storefront API access token** from the Shopify Headless sales channel. Never put an Admin API token or private Storefront token in browser code.
+The site currently presents a clearly labeled preview collection without prices or purchasable inventory. In `public/config.js`, set the shop's `something.myshopify.com` domain and **public Storefront API access token** from the Shopify Headless sales channel. Never put an Admin API token or private Storefront token in browser code.
 
 Publish products to that sales channel and grant public product reading access. The storefront fetches Shopify products and variants, supports sold-out options, creates a Shopify cart, and redirects to Shopify's secure checkout. Shopify manages inventory, payments, shipping, and tax. Products tagged through product type containing crochet/knit/wear appear in Crochet; others appear in Art & little things. Put front and back as the first two Shopify product images to enable the image swap. The first variant's price appears on collection cards; final chosen-variant prices appear at checkout.
 
@@ -18,4 +18,8 @@ Before public launch: confirm product names, descriptions, prices, sizes/materia
 
 ## Assets
 
-User-provided images are copied into `dist/assets` as web-ready JPEGs. Original sources are not modified. Only intentionally selected imagery is displayed; extra supplied photos are retained as possible design references. Fonts load from Google Fonts with local system fallbacks.
+User-provided images are copied into `public/assets` as web-ready JPEGs. Original sources are not modified. Only intentionally selected imagery is displayed; extra supplied photos are retained as possible design references. Fonts load from Google Fonts with local system fallbacks.
+
+## Slideshow and shared likes
+
+The hero crossfades between four model photos every 6.5 seconds with a gentle drift, a pause control, background-tab suspension, and reduced-motion support. Shared item counts use D1 and one vote per item per anonymous HttpOnly cookie. Votes can be removed; the unique database key makes duplicate requests idempotent. Anonymous cookies are a convenience, not a verified-person voting system. Clearing cookies or using another browser permits another vote. No login is required. Votes apply to the preview catalog; new live Shopify product IDs must be registered server-side before accepting votes.
