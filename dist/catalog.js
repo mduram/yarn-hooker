@@ -1,0 +1,364 @@
+window.PREVIEW_CATALOG = [
+  {
+    "id": "duck",
+    "title": "The duck vest",
+    "category": "Clothing",
+    "description": "Olive crochet vest with a duck motif, checkerboard back, and blue ribbed edges.",
+    "images": [
+      "/assets/collection-03.jpg",
+      "/assets/collection-04.jpg"
+    ],
+    "imageLabels": [
+      "Front",
+      "Back"
+    ]
+  },
+  {
+    "id": "orange",
+    "title": "The statement sweater",
+    "category": "Clothing",
+    "description": "Orange crochet sweater with a skateboard chicken motif and checkerboard sleeves.",
+    "images": [
+      "/assets/collection-18.jpg",
+      "/assets/collection-21.jpg",
+      "/assets/collection-20.jpg",
+      "/assets/collection-19.jpg"
+    ],
+    "imageLabels": [
+      "Front",
+      "Worn",
+      "Styled",
+      "Detail"
+    ]
+  },
+  {
+    "id": "stripe",
+    "title": "The everyday vest",
+    "category": "Clothing",
+    "description": "Brown and cream striped crochet vest.",
+    "images": [
+      "/assets/collection-25.jpg",
+      "/assets/collection-26.jpg",
+      "/assets/collection-27.jpg"
+    ],
+    "imageLabels": [
+      "Front",
+      "Back",
+      "Worn"
+    ]
+  },
+  {
+    "id": "fish",
+    "title": "The fish sweater",
+    "category": "Clothing",
+    "description": "Charcoal crochet sweater with a fish motif.",
+    "images": [
+      "/assets/collection-22.jpg",
+      "/assets/collection-23.jpg",
+      "/assets/collection-24.jpg"
+    ],
+    "imageLabels": [
+      "Front",
+      "Back",
+      "Worn"
+    ]
+  },
+  {
+    "id": "pink-top",
+    "title": "The pink openwork top",
+    "category": "Clothing",
+    "description": "Pink sleeveless top with vertical openwork stitches.",
+    "images": [
+      "/assets/collection-17.jpg",
+      "/assets/collection-16.jpg"
+    ],
+    "imageLabels": [
+      "Worn",
+      "Detail"
+    ]
+  },
+  {
+    "id": "charcoal-top",
+    "title": "The charcoal openwork top",
+    "category": "Clothing",
+    "description": "Charcoal sleeveless top with flecked yarn and vertical openwork stitches.",
+    "images": [
+      "/assets/collection-14.jpg",
+      "/assets/collection-15.jpg"
+    ],
+    "imageLabels": [
+      "Front",
+      "Detail"
+    ]
+  },
+  {
+    "id": "green-vest",
+    "title": "The tie-front vest",
+    "category": "Clothing",
+    "description": "Tonal green crochet vest with front ties.",
+    "images": [
+      "/assets/collection-28.jpg",
+      "/assets/collection-29.jpg"
+    ],
+    "imageLabels": [
+      "Front",
+      "Back"
+    ]
+  },
+  {
+    "id": "rust-top",
+    "title": "The rust openwork sweater",
+    "category": "Clothing",
+    "description": "Rust-colored cropped sweater with an openwork square pattern.",
+    "images": [
+      "/assets/collection-30.jpg",
+      "/assets/collection-32.jpg",
+      "/assets/collection-31.jpg"
+    ],
+    "imageLabels": [
+      "Front",
+      "Hanging",
+      "Detail"
+    ]
+  },
+  {
+    "id": "cream-shrug",
+    "title": "The cream shrug",
+    "category": "Clothing",
+    "description": "Cream cropped shrug with long sleeves and openwork stitches.",
+    "images": [
+      "/assets/collection-35.jpg",
+      "/assets/collection-36.jpg",
+      "/assets/collection-33.jpg",
+      "/assets/collection-34.jpg",
+      "/assets/collection-37.jpg"
+    ],
+    "imageLabels": [
+      "Hanging",
+      "Worn",
+      "Flat lay",
+      "Detail",
+      "Styled"
+    ]
+  },
+  {
+    "id": "checker-tote",
+    "title": "The checkerboard tote",
+    "category": "Bags",
+    "description": "Teal and pastel checkerboard crochet tote with long straps.",
+    "images": [
+      "/assets/collection-09.jpg",
+      "/assets/collection-10.jpg"
+    ],
+    "imageLabels": [
+      "Front",
+      "Worn"
+    ]
+  },
+  {
+    "id": "mini-bags",
+    "title": "The metallic mini bags",
+    "category": "Bags",
+    "description": "Small crochet handbags in blue, rose, and lilac.",
+    "images": [
+      "/assets/collection-05.jpg",
+      "/assets/collection-06.jpg"
+    ],
+    "imageLabels": [
+      "Colors",
+      "Side view"
+    ]
+  },
+  {
+    "id": "marl-bag",
+    "title": "The marled mini bags",
+    "category": "Bags",
+    "description": "Small crochet handbags in two marled color combinations.",
+    "images": [
+      "/assets/collection-07.jpg",
+      "/assets/collection-08.jpg"
+    ],
+    "imageLabels": [
+      "Blue & mauve",
+      "Blue & taupe"
+    ]
+  },
+  {
+    "id": "blanket",
+    "title": "The patchwork blanket",
+    "category": "Home",
+    "description": "Granny-square patchwork in pink, blue, green, cream, and brown.",
+    "images": [
+      "/assets/collection-02.jpg",
+      "/assets/collection-01.jpg"
+    ],
+    "imageLabels": [
+      "Full view",
+      "Detail"
+    ]
+  },
+  {
+    "id": "hood",
+    "title": "The colorful hood",
+    "category": "Hats & scarves",
+    "description": "Multicolor crochet hood with a tie closure.",
+    "images": [
+      "/assets/collection-40.jpg",
+      "/assets/collection-39.jpg"
+    ],
+    "imageLabels": [
+      "Worn",
+      "Side view"
+    ]
+  },
+  {
+    "id": "hood-pair",
+    "title": "The striped hoods",
+    "category": "Hats & scarves",
+    "description": "Two striped crochet hoods with contrast trim and ties.",
+    "images": [
+      "/assets/collection-38.jpg"
+    ],
+    "imageLabels": [
+      "Color variations"
+    ]
+  },
+  {
+    "id": "scarves",
+    "title": "The patterned scarves",
+    "category": "Hats & scarves",
+    "description": "Blue-and-cream and red-and-cream patterned scarves.",
+    "images": [
+      "/assets/collection-11.jpg"
+    ],
+    "imageLabels": [
+      "Color variations"
+    ]
+  },
+  {
+    "id": "navy-scarf",
+    "title": "The navy scarf",
+    "category": "Hats & scarves",
+    "description": "Navy and cream patterned crochet scarf.",
+    "images": [
+      "/assets/collection-13.jpg",
+      "/assets/collection-12.jpg"
+    ],
+    "imageLabels": [
+      "Detail",
+      "Worn"
+    ]
+  },
+  {
+    "id": "beanies",
+    "title": "The beanies",
+    "category": "Hats & scarves",
+    "description": "A collection of crochet beanies in solid, striped, and checkerboard designs.",
+    "images": [
+      "/assets/collection-41.jpg",
+      "/assets/collection-42.jpg",
+      "/assets/collection-45.jpg",
+      "/assets/collection-46.jpg"
+    ],
+    "imageLabels": [
+      "Collection",
+      "Striped",
+      "Orange checkerboard",
+      "Pink styles"
+    ]
+  },
+  {
+    "id": "bucket-hats",
+    "title": "The bucket hats",
+    "category": "Hats & scarves",
+    "description": "Crochet bucket hats in checkerboard, striped, and flame designs.",
+    "images": [
+      "/assets/collection-43.jpg",
+      "/assets/collection-49.jpg"
+    ],
+    "imageLabels": [
+      "Collection",
+      "Rust checkerboard · worn"
+    ]
+  },
+  {
+    "id": "fruit-hats",
+    "title": "The character hats",
+    "category": "Hats & scarves",
+    "description": "Crochet hats with fruit and animal details.",
+    "images": [
+      "/assets/collection-44.jpg"
+    ],
+    "imageLabels": [
+      "Collection"
+    ]
+  },
+  {
+    "id": "strawberry-hat",
+    "title": "The strawberry hat",
+    "category": "Hats & scarves",
+    "description": "Red crochet hat with leaf details and white seeds.",
+    "images": [
+      "/assets/collection-47.jpg"
+    ],
+    "imageLabels": [
+      "Worn"
+    ]
+  },
+  {
+    "id": "navy-hat",
+    "title": "The navy bucket hat",
+    "category": "Hats & scarves",
+    "description": "Navy crochet bucket hat.",
+    "images": [
+      "/assets/collection-48.jpg"
+    ],
+    "imageLabels": [
+      "Worn"
+    ]
+  },
+  {
+    "id": "granny-hats",
+    "title": "The granny-square hats",
+    "category": "Hats & scarves",
+    "description": "Wide-brim granny-square hats in muted blue, green, mauve, and cream.",
+    "images": [
+      "/assets/collection-50.jpg",
+      "/assets/collection-51.jpg"
+    ],
+    "imageLabels": [
+      "Color variations",
+      "Construction detail"
+    ]
+  },
+  {
+    "id": "pastel-hat",
+    "title": "The pastel brim hat",
+    "category": "Hats & scarves",
+    "description": "Pastel granny-square hat with a shaped brim and chin cord.",
+    "images": [
+      "/assets/collection-52.jpg"
+    ],
+    "imageLabels": [
+      "Worn"
+    ]
+  },
+  {
+    "id": "cherry",
+    "title": "Cherry on top",
+    "category": "Art",
+    "images": [
+      "/assets/cherries.jpg"
+    ],
+    "description": "Flaming cherry block print with checkerboard details."
+  },
+  {
+    "id": "mermaid",
+    "title": "A little out of water",
+    "category": "Art",
+    "images": [
+      "/assets/mermaid.jpg"
+    ],
+    "description": "Mermaid block print with a checkerboard tail."
+  }
+];
