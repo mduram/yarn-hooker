@@ -23,3 +23,7 @@ User-provided images are copied into `public/assets` as web-ready JPEGs. Origina
 ## Slideshow and shared likes
 
 The hero crossfades between four model photos every 6.5 seconds with a gentle drift, a pause control, background-tab suspension, and reduced-motion support. Shared item counts use D1 and one vote per item per anonymous HttpOnly cookie. Votes can be removed; the unique database key makes duplicate requests idempotent. Anonymous cookies are a convenience, not a verified-person voting system. Clearing cookies or using another browser permits another vote. No login is required. Votes apply to the preview catalog; new live Shopify product IDs must be registered server-side before accepting votes.
+
+## GitHub Pages
+
+GitHub Actions builds a static storefront from `public/` using `node scripts/build-pages.mjs` and deploys `pages-dist/`. Pages must use GitHub Actions as its publishing source. The root CNAME preserves yarnhooker.com. Asset paths support both a custom domain and a repository subpath. Hearts are personal favorites stored on the visitor’s device; GitHub Pages does not run the historical D1 shared-vote API. The server source remains available for a future full-stack deployment. No package installation is required for the Pages build.

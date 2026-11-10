@@ -1,0 +1,11 @@
+import {cp,mkdir,readFile,writeFile,rm} from 'node:fs/promises';
+await rm('pages-dist',{recursive:true,force:true});
+await mkdir('pages-dist',{recursive:true});
+await cp('public','pages-dist',{recursive:true});
+let html=await readFile('public/storefront.html','utf8');
+html=html.replaceAll('src="/','src="./').replaceAll('href="/','href="./');
+await writeFile('pages-dist/index.html',html);
+let catalog=await readFile('public/catalog.js','utf8');
+await writeFile('pages-dist/catalog.js',catalog.replaceAll('"/assets/','"./assets/'));
+await cp('CNAME','pages-dist/CNAME');
+await writeFile('pages-dist/.nojekyll','');
