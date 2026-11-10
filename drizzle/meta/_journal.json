@@ -8,6 +8,20 @@
       "when": 1793299553886,
       "tag": "0000_wakeful_the_stranger",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1794345683764,
+      "tag": "0001_flimsy_cloak",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1794345762898,
+      "tag": "0002_premium_firelord",
+      "breakpoints": true
     }
   ]
 }

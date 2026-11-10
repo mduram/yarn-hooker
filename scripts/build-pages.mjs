@@ -9,3 +9,8 @@ let catalog=await readFile('public/catalog.js','utf8');
 await writeFile('pages-dist/catalog.js',catalog.replaceAll('"/assets/','"./assets/'));
 await cp('CNAME','pages-dist/CNAME');
 await writeFile('pages-dist/.nojekyll','');
+
+const content=JSON.parse(await readFile('content/site.json','utf8'));
+function relativeImages(o){for(const k of Object.keys(o)){if(typeof o[k]==='string'&&o[k].startsWith('/assets/'))o[k]='.'+o[k];else if(o[k]&&typeof o[k]==='object')relativeImages(o[k])}}
+relativeImages(content);
+await writeFile('pages-dist/site-config.js','window.SITE_CONTENT = '+JSON.stringify(content)+';');

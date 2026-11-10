@@ -22,8 +22,16 @@ User-provided images are copied into `public/assets` as web-ready JPEGs. Origina
 
 ## Slideshow and shared likes
 
-The hero crossfades between four model photos every 6.5 seconds with a gentle drift, a pause control, background-tab suspension, and reduced-motion support. Shared item counts use D1 and one vote per item per anonymous HttpOnly cookie. Votes can be removed; the unique database key makes duplicate requests idempotent. Anonymous cookies are a convenience, not a verified-person voting system. Clearing cookies or using another browser permits another vote. No login is required. Votes apply to the preview catalog; new live Shopify product IDs must be registered server-side before accepting votes.
+The hero crossfades between three product photos and one Remy photo every 6.5 seconds with a gentle drift, a pause control, background-tab suspension, and reduced-motion support. Shared item counts use D1 and one vote per item per anonymous HttpOnly cookie. Votes can be removed; the unique database key makes duplicate requests idempotent. Anonymous cookies are a convenience, not a verified-person voting system. Clearing cookies or using another browser permits another vote. No login is required. Votes apply to the preview catalog; new live Shopify product IDs must be registered server-side before accepting votes.
 
 ## GitHub Pages
 
 GitHub Actions builds a static storefront from `public/` using `node scripts/build-pages.mjs` and deploys `pages-dist/`. Pages must use GitHub Actions as its publishing source. The root CNAME preserves yarnhooker.com. Asset paths support both a custom domain and a repository subpath. Hearts are personal favorites stored on the visitor’s device; GitHub Pages does not run the historical D1 shared-vote API. The server source remains available for a future full-stack deployment. No package installation is required for the Pages build.
+
+## Owner editor
+
+Use the Owner login link in the footer. Username: `remy`. The editor supports colors, copy, products, photo uploads, galleries, slideshow images, and section visibility/order. Preview changes, then Publish to create a commit in `mduram/yarn-hooker`; GitHub Actions publishes it to Pages. Content lives in `content/site.json`; generated `public/site-config.js` is refreshed at build time. Shopify inventory remains managed in Shopify when connected.
+
+Authentication runs on the separate Sites backend, not GitHub Pages. Activate once at `/admin/setup.html#key=SETUP_KEY` on that backend using the private setup key, a password of at least 14 characters, and a fine-grained GitHub token restricted to this repository with Contents read/write. Never commit credentials. The password is hashed, the token is encrypted with the runtime `OWNER_ENCRYPTION_KEY`, and sessions expire after four hours. Setup locks after first use. `OWNER_SETUP_KEY` and `OWNER_ENCRYPTION_KEY` are secret runtime values; retain the encryption key when redeploying. Migrations in `drizzle/` create the required D1 tables.
+
+The editor may only commit the content JSON and uploaded images. It does not provide general GitHub account access. Concurrent repository changes cause a conflict instead of overwriting someone else's commit. For credential recovery, the backend administrator must reset the owner settings and sessions in D1, then issue a new setup key.
