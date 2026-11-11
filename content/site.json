@@ -77,9 +77,9 @@
   "products": [
     {
       "id": "duck",
-      "title": "The duck vest",
+      "title": "Quack Couture Vest",
       "category": "Clothing",
-      "description": "Olive crochet vest with a duck motif, checkerboard back, and blue ribbed edges.",
+      "description": "Pattern by @woolandbuggers\n\nInventory: 2\nSize: Medium",
       "images": [
         "/assets/collection-03.jpg",
         "/assets/collection-04.jpg"
@@ -87,7 +87,8 @@
       "imageLabels": [
         "Front",
         "Back"
-      ]
+      ],
+      "hidden": false
     },
     {
       "id": "orange",
