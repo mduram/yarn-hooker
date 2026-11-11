@@ -273,7 +273,7 @@
     {
       "id": "hood-pair",
       "title": "Chroma Hood",
-      "category": "Hats & scarves",
+      "category": "Hats & Scarves",
       "description": "Inventory: 2\nPrice: $70\n\nPattern by @cosmaudi",
       "images": [
         "/assets/collection-38.jpg",
@@ -287,7 +287,7 @@
     {
       "id": "scarves",
       "title": "Soft Houndstooth Scarf",
-      "category": "Hats & scarves",
+      "category": "Hats & Scarves",
       "description": "Inventory: 2 (red, light blue)\nPrice: $60",
       "images": [
         "/assets/collection-11.jpg",
@@ -302,7 +302,7 @@
     {
       "id": "beanies",
       "title": "Beanie",
-      "category": "Hats & scarves",
+      "category": "Hats & Scarves",
       "description": "Inventory: 4\nSize: Various\nPrice: $45",
       "images": [
         "/assets/collection-41.jpg",
@@ -320,7 +320,7 @@
     {
       "id": "bucket-hats",
       "title": "Bucket Hats",
-      "category": "Hats & scarves",
+      "category": "Hats & Scarves",
       "description": "Inventory: 7\n-Checker x4: mocha, rust/cream, orange/pink, cotton candy\n-Flame x1\n-Stripe x1\n-Banded x1\n\nPrice: $45",
       "images": [
         "/assets/collection-43.jpg",
@@ -336,7 +336,7 @@
     {
       "id": "fruit-hats",
       "title": "Character Buckets",
-      "category": "Hats & scarves",
+      "category": "Hats & Scarves",
       "description": "Inventory: 3 (blueberry, lemon, dog)\nSize: M\nPrice: $55",
       "images": [
         "/assets/collection-44.jpg",
@@ -350,7 +350,7 @@
     {
       "id": "granny-hats",
       "title": "Granny Cowboy Hats",
-      "category": "Hats & scarves",
+      "category": "Hats & Scarves",
       "description": "Inventory: 2\nPrice: $150",
       "images": [
         "/assets/collection-50.jpg",
