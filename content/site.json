@@ -140,20 +140,6 @@
       ]
     },
     {
-      "id": "pink-top",
-      "title": "The pink openwork top",
-      "category": "Clothing",
-      "description": "Pink sleeveless top with vertical openwork stitches.",
-      "images": [
-        "/assets/collection-17.jpg",
-        "/assets/collection-16.jpg"
-      ],
-      "imageLabels": [
-        "Worn",
-        "Detail"
-      ]
-    },
-    {
       "id": "charcoal-top",
       "title": "The charcoal openwork top",
       "category": "Clothing",
@@ -274,20 +260,6 @@
       ]
     },
     {
-      "id": "hood",
-      "title": "The colorful hood",
-      "category": "Hats & scarves",
-      "description": "Multicolor crochet hood with a tie closure.",
-      "images": [
-        "/assets/collection-40.jpg",
-        "/assets/collection-39.jpg"
-      ],
-      "imageLabels": [
-        "Worn",
-        "Side view"
-      ]
-    },
-    {
       "id": "hood-pair",
       "title": "The striped hoods",
       "category": "Hats & scarves",
@@ -309,20 +281,6 @@
       ],
       "imageLabels": [
         "Color variations"
-      ]
-    },
-    {
-      "id": "navy-scarf",
-      "title": "The navy scarf",
-      "category": "Hats & scarves",
-      "description": "Navy and cream patterned crochet scarf.",
-      "images": [
-        "/assets/collection-13.jpg",
-        "/assets/collection-12.jpg"
-      ],
-      "imageLabels": [
-        "Detail",
-        "Worn"
       ]
     },
     {
@@ -370,30 +328,6 @@
       ]
     },
     {
-      "id": "strawberry-hat",
-      "title": "The strawberry hat",
-      "category": "Hats & scarves",
-      "description": "Red crochet hat with leaf details and white seeds.",
-      "images": [
-        "/assets/collection-47.jpg"
-      ],
-      "imageLabels": [
-        "Worn"
-      ]
-    },
-    {
-      "id": "navy-hat",
-      "title": "The navy bucket hat",
-      "category": "Hats & scarves",
-      "description": "Navy crochet bucket hat.",
-      "images": [
-        "/assets/collection-48.jpg"
-      ],
-      "imageLabels": [
-        "Worn"
-      ]
-    },
-    {
       "id": "granny-hats",
       "title": "The granny-square hats",
       "category": "Hats & scarves",
@@ -406,36 +340,6 @@
         "Color variations",
         "Construction detail"
       ]
-    },
-    {
-      "id": "pastel-hat",
-      "title": "The pastel brim hat",
-      "category": "Hats & scarves",
-      "description": "Pastel granny-square hat with a shaped brim and chin cord.",
-      "images": [
-        "/assets/collection-52.jpg"
-      ],
-      "imageLabels": [
-        "Worn"
-      ]
-    },
-    {
-      "id": "cherry",
-      "title": "Cherry on top",
-      "category": "Art",
-      "images": [
-        "/assets/cherries.jpg"
-      ],
-      "description": "Flaming cherry block print with checkerboard details."
-    },
-    {
-      "id": "mermaid",
-      "title": "A little out of water",
-      "category": "Art",
-      "images": [
-        "/assets/mermaid.jpg"
-      ],
-      "description": "Mermaid block print with a checkerboard tail."
     }
   ]
 }
