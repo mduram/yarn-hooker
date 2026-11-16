@@ -25,9 +25,10 @@ assert.equal((await post({action:'login',username:'remy',password:'wrong-passwor
 const login=await post({action:'login',username:'remy',password:'test-password-very-long'});assert.equal(login.status,200);token=(await login.json()).token;
 assert.equal((await get()).status,200);
 const bad=structuredClone(content);bad.slides[0].src='javascript:alert(1)';assert.equal((await post({action:'publish',content:bad,revision:head,uploads:[]})).status,400);
+for(const change of [c=>c.products[0].inventory=-1,c=>c.products[0].inventory=1.5,c=>c.products[0].price='oops',c=>c.contactEmail='bad',c=>c.catalog.categories.push({...c.catalog.categories[0]})]){const invalid=structuredClone(content);change(invalid);assert.equal((await post({action:'publish',content:invalid,revision:head,uploads:[]})).status,400)}
 assert.equal((await post({action:'publish',content,revision:'stale',uploads:[]})).status,409);
 assert.equal((await post({action:'publish',content,revision:head,uploads:[]},false,'https://evil.example')).status,403);
 assert.equal((await post({action:'publish',content,revision:head,uploads:[]})).status,200);
-const tree=writes.find(x=>x.url.endsWith('/git/trees'));assert.deepEqual(tree.body.tree.map(x=>x.path),['content/site.json']);assert.equal(JSON.parse(tree.body.tree[0].content).text.makerTitle,'Made by Remy.');
+const tree=writes.find(x=>x.url.endsWith('/git/trees'));assert.deepEqual(tree.body.tree.map(x=>x.path),['content/site.json']);assert.equal(JSON.parse(tree.body.tree[0].content).text.makerTitle,content.text.makerTitle);assert.equal(JSON.parse(tree.body.tree[0].content).text.makerDescription,content.text.makerDescription);
 assert.equal((await post({action:'logout'})).status,200);assert.equal((await get()).status,401);
 globalThis.fetch=originalFetch;sql.close();console.log('Owner setup, encrypted storage, login, authorization, validation, conflict detection, GitHub commit, and logout passed.');

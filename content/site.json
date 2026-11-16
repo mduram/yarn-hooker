@@ -24,7 +24,8 @@
     "customTitle": "something special in mind?",
     "customDescription": "I take custom requests! \n\nFor more information, please reach out to me on Instagram or email at remy@yarnhooker.com. ",
     "customButton": "Get in touch ↗",
-    "footerDescription": "Crochet, prints, and other cool stuff"
+    "footerDescription": "Crochet, prints, and other cool stuff",
+    "detailsTitle": "Details."
   },
   "instagram": "https://www.instagram.com/yarn.h00ker/",
   "makerImage": "/assets/remy-market.jpg",
@@ -95,7 +96,7 @@
       "id": "duck",
       "title": "Quack Couture Vest",
       "category": "Clothing",
-      "description": "Inventory: 2, identical\nSize: Medium\nPrice: $100\n\nPattern by @woolandbuggers",
+      "description": "Pattern by @woolandbuggers",
       "images": [
         "/assets/collection-03.jpg",
         "/assets/collection-04.jpg"
@@ -104,13 +105,18 @@
         "View 1",
         "View 2"
       ],
-      "hidden": false
+      "hidden": false,
+      "collection": "Crochet",
+      "sizes": "Medium",
+      "price": "100",
+      "currency": "USD",
+      "inventory": 2
     },
     {
       "id": "orange",
       "title": "Cropped Sk8rboi Sweater",
       "category": "Clothing",
-      "description": "Inventory: 1\nSize: M\nPrice: $150\n\nPattern by @woolandbuggers",
+      "description": "Pattern by @woolandbuggers",
       "images": [
         "/assets/collection-18.jpg",
         "/assets/collection-19.jpg",
@@ -120,13 +126,18 @@
         "View 1",
         "View 2",
         "View 3"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "M",
+      "price": "150",
+      "currency": "USD",
+      "inventory": 1
     },
     {
       "id": "stripe",
       "title": "Houndstooth Vest",
       "category": "Clothing",
-      "description": "Inventory: 1\nSize: M/L\nPrice: $100",
+      "description": "",
       "images": [
         "/assets/collection-25.jpg",
         "/assets/collection-26.jpg",
@@ -136,13 +147,18 @@
         "View 1",
         "View 2",
         "View 3"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "M/L",
+      "price": "100",
+      "currency": "USD",
+      "inventory": 1
     },
     {
       "id": "fish",
       "title": "Fishy Sweater",
       "category": "Clothing",
-      "description": "Inventory: 1\nSize: L\nPrice: $200\n\nPattern by @woolandbuggers",
+      "description": "Pattern by @woolandbuggers",
       "images": [
         "/assets/collection-22.jpg",
         "/assets/collection-23.jpg",
@@ -152,13 +168,18 @@
         "View 1",
         "View 2",
         "View 3"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "L",
+      "price": "200",
+      "currency": "USD",
+      "inventory": 1
     },
     {
       "id": "charcoal-top",
       "title": "Hyphen Vest",
       "category": "Clothing",
-      "description": "Inventory: 1\nSize: XS\nPrice: $90\n\nPattern by @crochetreat",
+      "description": "Pattern by @crochetreat",
       "images": [
         "/assets/collection-14.jpg",
         "/assets/collection-15.jpg",
@@ -168,13 +189,18 @@
         "View 1",
         "View 2",
         "View 3"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "XS",
+      "price": "90",
+      "currency": "USD",
+      "inventory": 1
     },
     {
       "id": "green-vest",
       "title": "Cardigan Tying Vest",
       "category": "Clothing",
-      "description": "Inventory: 1\nSize: S/M\nPrice: $85",
+      "description": "",
       "images": [
         "/assets/collection-28.jpg",
         "/assets/collection-29.jpg"
@@ -182,13 +208,18 @@
       "imageLabels": [
         "View 1",
         "View 2"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "S/M",
+      "price": "85",
+      "currency": "USD",
+      "inventory": 1
     },
     {
       "id": "rust-top",
       "title": "Aspen Sweater",
       "category": "Clothing",
-      "description": "Inventory: 1\nSize: S/M\nPrice: $120\n\nPattern by @lankabyme",
+      "description": "Pattern by @lankabyme",
       "images": [
         "/assets/collection-30.jpg",
         "/assets/collection-31.jpg"
@@ -196,13 +227,18 @@
       "imageLabels": [
         "View 1",
         "View 2"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "S/M",
+      "price": "120",
+      "currency": "USD",
+      "inventory": 1
     },
     {
       "id": "cream-shrug",
       "title": "Colosseum Shrug",
       "category": "Clothing",
-      "description": "Inventory: 1\nSize: S\nPrice: $85\n\nPattern by @edsfart",
+      "description": "Pattern by @edsfart",
       "images": [
         "/assets/collection-33.jpg",
         "/assets/collection-34.jpg",
@@ -212,13 +248,18 @@
         "View 1",
         "View 2",
         "View 3"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "S",
+      "price": "85",
+      "currency": "USD",
+      "inventory": 1
     },
     {
       "id": "checker-tote",
       "title": "Lined Checkered Tote",
       "category": "Bags",
-      "description": "Inventory: 1\nPrice: $65",
+      "description": "",
       "images": [
         "/assets/collection-09.jpg",
         "/assets/collection-10.jpg"
@@ -226,13 +267,18 @@
       "imageLabels": [
         "View 1",
         "View 2"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "",
+      "price": "65",
+      "currency": "USD",
+      "inventory": 1
     },
     {
       "id": "mini-bags",
       "title": "Metallic Loaf Bag",
       "category": "Bags",
-      "description": "Inventory: 2 (pink, lilac)\nPrice: $65\n\nPattern by @bygalk",
+      "description": "Options: pink, lilac\n\nPattern by @bygalk",
       "images": [
         "/assets/collection-05.jpg",
         "/assets/collection-06.jpg"
@@ -240,13 +286,18 @@
       "imageLabels": [
         "View 1",
         "View 2"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "",
+      "price": "65",
+      "currency": "USD",
+      "inventory": 2
     },
     {
       "id": "marl-bag",
       "title": "Tricolor Hand Bag",
       "category": "Bags",
-      "description": "Inventory: 2 (donut, egg)\n\nPattern by @bygalk",
+      "description": "Options: donut, egg\nPattern by @bygalk",
       "images": [
         "/assets/collection-07.jpg",
         "/assets/collection-08.jpg"
@@ -254,13 +305,18 @@
       "imageLabels": [
         "Donut Bag, $50",
         "Egg Bag, $50"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "",
+      "price": "",
+      "currency": "USD",
+      "inventory": 2
     },
     {
       "id": "blanket",
       "title": "Granny Square Patchwork Blanket",
       "category": "Home",
-      "description": "Inventory: 1\nPrice: $300",
+      "description": "",
       "images": [
         "/assets/collection-02.jpg",
         "/assets/collection-01.jpg"
@@ -268,13 +324,18 @@
       "imageLabels": [
         "Full view",
         "View 2"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "",
+      "price": "300",
+      "currency": "USD",
+      "inventory": 1
     },
     {
       "id": "hood-pair",
       "title": "Chroma Hood",
       "category": "Hats & scarves",
-      "description": "Inventory: 2\nPrice: $70\n\nPattern by @cosmaudi",
+      "description": "Pattern by @cosmaudi",
       "images": [
         "/assets/collection-38.jpg",
         "/assets/uploads/19e1de24-99e2-454e-8bfe-d50df9aecca0.jpg"
@@ -282,13 +343,18 @@
       "imageLabels": [
         "View 1",
         "View 2"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "",
+      "price": "70",
+      "currency": "USD",
+      "inventory": 2
     },
     {
       "id": "scarves",
       "title": "Soft Houndstooth Scarf",
       "category": "Hats & scarves",
-      "description": "Inventory: 2 (red, light blue)\nPrice: $60",
+      "description": "Options: red, light blue",
       "images": [
         "/assets/collection-11.jpg",
         "/assets/uploads/07990c24-e955-4601-a5a1-b23a94710132.jpg"
@@ -297,13 +363,18 @@
         "View 1",
         "View 2"
       ],
-      "hidden": false
+      "hidden": false,
+      "collection": "Crochet",
+      "sizes": "",
+      "price": "60",
+      "currency": "USD",
+      "inventory": 2
     },
     {
       "id": "beanies",
       "title": "Beanie",
       "category": "Hats & scarves",
-      "description": "Inventory: 4\nSize: Various\nPrice: $45",
+      "description": "",
       "images": [
         "/assets/collection-41.jpg",
         "/assets/collection-42.jpg",
@@ -315,13 +386,18 @@
         "No-Fold Tricolor, Size S",
         "Checkered, Size S",
         "Monochrome Blush, Size M/L"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "Various",
+      "price": "45",
+      "currency": "USD",
+      "inventory": 4
     },
     {
       "id": "bucket-hats",
       "title": "Bucket Hats",
       "category": "Hats & scarves",
-      "description": "Inventory: 7\n-Checker x4: mocha, rust/cream, orange/pink, cotton candy\n-Flame x1\n-Stripe x1\n-Banded x1\n\nPrice: $45",
+      "description": "-Checker x4: mocha, rust/cream, orange/pink, cotton candy\n-Flame x1\n-Stripe x1\n-Banded x1",
       "images": [
         "/assets/collection-43.jpg",
         "/assets/collection-49.jpg",
@@ -331,13 +407,18 @@
         "Collection",
         "View 2",
         "Another view"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "",
+      "price": "45",
+      "currency": "USD",
+      "inventory": 7
     },
     {
       "id": "fruit-hats",
       "title": "Character Buckets",
       "category": "Hats & scarves",
-      "description": "Inventory: 3 (blueberry, lemon, dog)\nSize: M\nPrice: $55",
+      "description": "Options: blueberry, lemon, dog",
       "images": [
         "/assets/collection-44.jpg",
         "/assets/uploads/a7d23956-cb18-405b-ac83-680a21c6e06b.jpg"
@@ -345,13 +426,18 @@
       "imageLabels": [
         "View 1",
         "View 2"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "M",
+      "price": "55",
+      "currency": "USD",
+      "inventory": 3
     },
     {
       "id": "granny-hats",
       "title": "Granny Cowboy Hats",
       "category": "Hats & scarves",
-      "description": "Inventory: 2\nPrice: $150",
+      "description": "",
       "images": [
         "/assets/collection-50.jpg",
         "/assets/collection-51.jpg",
@@ -361,7 +447,52 @@
         "View 1",
         "View 2",
         "View 3"
-      ]
+      ],
+      "collection": "Crochet",
+      "sizes": "",
+      "price": "150",
+      "currency": "USD",
+      "inventory": 2
+    }
+  ],
+  "contactEmail": "remy@yarnhooker.com",
+  "catalog": {
+    "showAll": true,
+    "categories": [
+      {
+        "name": "Clothing",
+        "collection": "Crochet",
+        "visible": true
+      },
+      {
+        "name": "Bags",
+        "collection": "Crochet",
+        "visible": true
+      },
+      {
+        "name": "Home",
+        "collection": "Crochet",
+        "visible": true
+      },
+      {
+        "name": "Hats & scarves",
+        "collection": "Crochet",
+        "visible": true
+      }
+    ]
+  },
+  "details": [
+    {
+      "question": "How do I order?",
+      "answer": "Save your favourite pieces to the bag, then email your list or copy it into an Instagram message. Remy will confirm the price, size, and availability before you pay."
+    },
+    {
+      "question": "Can I request a custom piece?",
+      "answer": "Yes! Get in touch with your idea, colours, and sizing to discuss a custom piece."
+    },
+    {
+      "question": "What about shipping and care?",
+      "answer": "Please ask about shipping, processing times, and care when enquiring about your piece."
     }
   ]
 }

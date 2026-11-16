@@ -35,3 +35,11 @@ Use the Owner login link in the footer. Username: `remy`. The editor supports co
 Authentication runs on the separate Sites backend, not GitHub Pages. Activate once at `/admin/setup.html#key=SETUP_KEY` on that backend using the private setup key, a password of at least 14 characters, and a fine-grained GitHub token restricted to this repository with Contents read/write. Never commit credentials. The password is hashed, the token is encrypted with the runtime `OWNER_ENCRYPTION_KEY`, and sessions expire after four hours. Setup locks after first use. `OWNER_SETUP_KEY` and `OWNER_ENCRYPTION_KEY` are secret runtime values; retain the encryption key when redeploying. Migrations in `drizzle/` create the required D1 tables.
 
 The editor may only commit the content JSON and uploaded images. It does not provide general GitHub account access. Concurrent repository changes cause a conflict instead of overwriting someone else's commit. For credential recovery, the backend administrator must reset the owner settings and sessions in D1, then issue a new setup key.
+
+## Before Shopify: enquiries and collection management
+
+Products in `content/site.json` support `collection` (Crochet/Prints), comma-separated `sizes`, a decimal-string `price`, `currency`, and nullable integer `inventory`. Empty price/size/stock fields display enquiry guidance; zero stock disables adding that item. Stock is an availability guide and must be updated manually by the owner; saved bags do not reserve or decrement it. Existing prices/sizes/stock entered in descriptions have been migrated into these fields.
+
+Bags persist on each visitor's device. Download bag exports a text list. Email enquiry opens an email draft using `contactEmail`. Copy enquiry copies the list for the visitor to paste into an Instagram DM; Open Instagram opens the configured profile and does not send a message automatically. Shopify checkout remains separate when enabled.
+
+The editor's Collection tabs page manages `catalog.categories` and the All-tab toggle. Rename/move a category there to update matching product assignments. Hide/remove affects the category tab; products remain accessible through All. The Details & FAQ page manages questions/answers. About, FAQ, custom copy, and product descriptions preserve line breaks safely as plain text.
