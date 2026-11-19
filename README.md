@@ -43,3 +43,11 @@ Products in `content/site.json` support `collection` (Crochet/Prints), comma-sep
 Bags persist on each visitor's device. Download bag exports a text list. Email enquiry opens an email draft using `contactEmail`. Copy enquiry copies the list for the visitor to paste into an Instagram DM; Open Instagram opens the configured profile and does not send a message automatically. Shopify checkout remains separate when enabled.
 
 The editor's Collection tabs page manages `catalog.categories` and the All-tab toggle. Rename/move a category there to update matching product assignments. Hide/remove affects the category tab; products remain accessible through All. The Details & FAQ page manages questions/answers. About, FAQ, custom copy, and product descriptions preserve line breaks safely as plain text.
+
+## Live Shopify connection
+
+The storefront is connected to `0gp0az-hy.myshopify.com` using a public Storefront token in `public/config.js`. Shopify is authoritative for live product content, variants, prices and availability. `public/shopify.js` normalizes the live data; explicit product types/tags matching editor category names take precedence, then product titles provide fallback mapping for the current untyped catalogue. Printed tees map to Prints. Exact stock counts require `unauthenticated_read_product_inventory`; without it the shop uses available/sold-out status. Shopify validates stock again at checkout.
+
+Live bags store Shopify variant IDs separately from older preview enquiries. The bag offers a switch to retained enquiry items; these cannot enter paid checkout. Before checkout the catalogue is refreshed, unavailable variants are rejected, and Shopify cart warnings / adjusted quantities stop the redirect for review. No payment or completed order was submitted during integration testing.
+
+Manager preview mode deliberately shows the editable reference catalogue without activating Shopify checkout. Use Shopify admin for live product changes. Homepage copy, categories, About, FAQ, slideshow, colours, and sections remain in the website editor. Review product types/tags when introducing new categories. Ordinary products and up to 100 variants per product are supported; products needing more variants cause checkout to pause rather than showing incomplete options.

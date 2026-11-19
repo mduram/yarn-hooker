@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+await import('../public/shopify.js');
+const {normalize,unwrap,variantRow,checkoutLines}=globalThis.YHShopify;
+const v=(id,price,stock,available=true)=>({id:'gid://shopify/ProductVariant/'+id,title:id==='1'?'Small':'Large',availableForSale:available,quantityAvailable:stock,currentlyNotInStock:false,selectedOptions:[{name:'Size',value:id==='1'?'S':'L'}],price:{amount:price,currencyCode:'USD'}});
+const p={id:'gid://shopify/Product/1',title:'Crochet vest',handle:'vest',description:'',productType:'',tags:[],images:{nodes:[{url:'https://example.com/image.jpg'}]},variants:{nodes:[v('1','80',0,false),v('2','100',2)]}};
+const n=normalize(p);assert.equal(n.category,'Clothing');assert.equal(n.collection,'Crochet');assert.equal(n.price,'80');assert.equal(n.priceVaries,true);assert.equal(n.inventory,2);assert.equal(n.sizes,'S, L');
+const row=variantRow({productId:p.id,variant:p.variants.nodes[1].id,quantity:2},[n]);assert.equal(row.price,'100');assert.equal(row.size,'Large');assert.equal(row.limit,2);assert.deepEqual(checkoutLines([row]),[{merchandiseId:row.variant,quantity:2}]);
+assert.throws(()=>checkoutLines([{...row,quantity:3}]));assert.throws(()=>checkoutLines([variantRow({...row,variant:'gid://shopify/ProductVariant/999'},[n])]));assert.throws(()=>checkoutLines([{...row,variant:'preview'}]));
+assert.equal(normalize({...p,title:'Nautical print tee'}).collection,'Prints');assert.equal(normalize({...p,title:'Metallic handbag'}).category,'Bags');assert.equal(normalize({...p,title:'Bucket hat'}).category,'Hats & scarves');assert.equal(normalize({...p,productType:'Accessories'},{categories:[{name:'Accessories',collection:'Crochet'}]}).category,'Accessories');
+assert.equal(normalize({...p,variants:{nodes:[{...v('1','80',null),quantityAvailable:null}]}}).inventory,null);
+const denied={message:'denied',path:['products','nodes',0,'variants','nodes',0,'quantityAvailable'],extensions:{code:'ACCESS_DENIED'}};assert.deepEqual(unwrap({data:{products:[]},errors:[denied]}),{products:[]});assert.throws(()=>unwrap({data:{},errors:[{message:'Other API error'}]}));
+console.log('Shopify category mapping, variant prices, size options, unavailable variants, stock limits, preview isolation, and restricted inventory access passed.');
