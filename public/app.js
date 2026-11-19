@@ -39,6 +39,20 @@ $('#checkout').onclick=async()=>{const b=$('#checkout');b.disabled=true;$('#chec
 async function loadShop(){const c=window.SHOPIFY_CONFIG;if(window.OWNER_PREVIEW_CONFIG){shopLoading=false;return}if(!c?.domain||!c.publicAccessToken){shopLoading=false;return}$('#catalog-status').textContent='Loading the shop...';try{products=await fetchProducts();live=true;shopLoading=false;sync();$('#catalog-status').textContent='';render();if($('#product-dialog').open)$('#product-dialog').close();if($('#bag-dialog').open)showBag();const aliases={'cream-shrug':'fuzzy-colosseum-shrug','bucket-hats':'rust-checkered-bucket-hat'};document.querySelectorAll('.lookbook-grid [data-product]').forEach(b=>{const p=products.find(p=>p.handle===aliases[b.dataset.product]);if(p){b.dataset.product=p.id;b.hidden=false}})}catch{shopLoading=false;$('#catalog-status').textContent='The live shop is temporarily unavailable. Browse the collection or send an enquiry; checkout is paused.'}}
 
 render();sync();loadShop();
+// Shopify remains the source of truth; no rebuild is needed for catalog edits.
+let catalogRefreshRunning=false,lastCatalogRefresh=Date.now();
+async function refreshCatalog(){
+ if(document.hidden||window.OWNER_PREVIEW_CONFIG||shopLoading||catalogRefreshRunning||$('#product-dialog').open||$('#bag-dialog').open)return;
+ const c=window.SHOPIFY_CONFIG;if(!c?.domain||!c.publicAccessToken)return;
+ catalogRefreshRunning=true;
+ try{const next=await fetchProducts();products=next;live=true;lastCatalogRefresh=Date.now();sync();render();$('#catalog-status').textContent=''}
+ catch{$('#catalog-status').textContent='Shop updates are temporarily unavailable. We’ll retry automatically; availability is checked again at checkout.'}
+ finally{catalogRefreshRunning=false}
+}
+setInterval(refreshCatalog,120000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&Date.now()-lastCatalogRefresh>=30000)refreshCatalog()});
+window.addEventListener('online',refreshCatalog);
+for(const dialog of [$('#product-dialog'),$('#bag-dialog')])dialog.addEventListener('close',()=>{if(Date.now()-lastCatalogRefresh>=120000)refreshCatalog()});
 
 function saveVote(productId){if(likedItems.has(productId))likedItems.delete(productId);else likedItems.add(productId);try{localStorage.setItem('yh-favorites',JSON.stringify([...likedItems]));$('#catalog-status').textContent=''}catch{$('#catalog-status').textContent='Favorites cannot be saved in this browser.'}render()}
 const heroSlides=[...document.querySelectorAll('.hero-slide')],heroPause=$('.hero-pause'),reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
