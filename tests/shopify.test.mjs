@@ -13,3 +13,9 @@ console.log('Shopify category mapping, variant prices, size options, unavailable
 const customized=globalThis.YHShopify.present([n],[{id:n.id,title:'Website vest',description:'Website copy',hidden:true,images:['/assets/custom.jpg'],position:1}])[0];
 assert.equal(customized.title,'Website vest');assert.equal(customized.hidden,true);assert.equal(customized.images[0],'/assets/custom.jpg');assert.equal(customized.sizes,n.sizes);assert.equal(customized.price,n.price);assert.equal(customized.variants,n.variants);
 assert.equal(globalThis.YHShopify.present([n],[{id:n.id,title:''}])[0].title,n.title);
+const adjust=globalThis.YHShopify.stockAdjustments;
+assert.deepEqual(adjust([{id:'a',variant:'v1',quantity:5,limit:2,title:'Vest'}]),[{id:'a',quantity:2,title:'Vest'}]);
+assert.deepEqual(adjust([{id:'a',variant:'v1',quantity:5,limit:null,title:'Vest'}]),[]);
+assert.deepEqual(adjust([{id:'a',variant:'v1',quantity:5,limit:null,title:'Vest'}],[{merchandise:{id:'v1'},quantity:1}]),[{id:'a',quantity:1,title:'Vest'}]);
+assert.deepEqual(adjust([{id:'a',variant:'v1',quantity:5,limit:null,title:'Vest'}],[]),[{id:'a',quantity:0,title:'Vest'}]);
+assert.deepEqual(adjust([{id:'a',variant:'v1',quantity:1,limit:2,title:'Vest'}]),[]);
