@@ -76,7 +76,7 @@
     },
     {
       "id": "lookbook",
-      "visible": true
+      "visible": false
     },
     {
       "id": "studio",
@@ -493,6 +493,378 @@
     {
       "question": "What about shipping and care?",
       "answer": "Please ask about shipping, processing times, and care when enquiring about your piece."
+    }
+  ],
+  "shopifyOverrides": [
+    {
+      "id": "gid://shopify/Product/15818525900911",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826319016047",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826339659887",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826360828015",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826382979183",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826396348527",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826421022831",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826425446511",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826436128879",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826447368303",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826936922223",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826948456559",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826955305071",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826968674415",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826985189487",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826989383791",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15826997575791",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833688047727",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833705807983",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833711083631",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833750274159",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833761742959",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833765412975",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833777864815",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833784549487",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833790087279",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833792610415",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833801719919",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833805062255",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833810632815",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833816236143",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833820135535",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833827410031",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833832816751",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833833865327",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833837994095",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
+    },
+    {
+      "id": "gid://shopify/Product/15833841238127",
+      "title": "",
+      "description": "",
+      "category": "",
+      "collection": "",
+      "position": 9999,
+      "hidden": false,
+      "images": []
     }
   ]
 }
