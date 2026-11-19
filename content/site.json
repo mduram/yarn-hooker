@@ -10,7 +10,7 @@
     "heroEyebrow": "crochet, prints, embroidery, more!",
     "heroTitle": "sustainably fashionable",
     "heroDescription": "",
-    "heroButton": "View collection ↗",
+    "heroButton": "View collection \u2197",
     "collectionEyebrow": "AVAILABLE FOR PURCHASE",
     "collectionTitle": "the collection",
     "catalogNote": "Please buy something. My wrists hurt. Please.",
@@ -23,7 +23,7 @@
     "customEyebrow": "CUSTOM PIECES",
     "customTitle": "something special in mind?",
     "customDescription": "I take custom requests! \n\nFor more information, please reach out to me on Instagram or email at remy@yarnhooker.com. ",
-    "customButton": "Get in touch ↗",
+    "customButton": "Get in touch \u2197",
     "footerDescription": "Crochet, prints, and other cool stuff",
     "detailsTitle": "Details."
   },
@@ -484,7 +484,7 @@
   "details": [
     {
       "question": "How do I order?",
-      "answer": "Choose a piece, select any size or colour options, and add it to your bag. Continue to secure checkout to review shipping, taxes, and payment. For custom pieces, contact Remy by email or Instagram."
+      "answer": "Choose a piece, select a size or other available options, and add it to your bag. Open your bag and continue to secure Shopify checkout to review shipping, taxes, and payment. For custom pieces, contact Remy by email or Instagram."
     },
     {
       "question": "Can I request a custom piece?",
@@ -492,7 +492,7 @@
     },
     {
       "question": "What about shipping and care?",
-      "answer": "Please ask about shipping, processing times, and care when enquiring about your piece."
+      "answer": "Shipping options and costs are shown at checkout. For processing times, delivery questions, or care instructions for a specific piece, contact Remy before ordering."
     }
   ],
   "shopifyOverrides": [

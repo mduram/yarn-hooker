@@ -14,6 +14,7 @@ document.querySelectorAll('.wordmark img,.footer-brand img').forEach(i=>i.src=c.
 const slides=document.querySelector('.hero-slides');slides.replaceChildren();for(const [i,p] of c.slides.entries()){const img=document.createElement('img');img.className='hero-slide'+(i===0?' is-current':'');img.src=p.src;img.alt=p.alt;slides.append(img)}
 if(Array.isArray(c.details)){const box=document.querySelector('.faq>div');box.replaceChildren();for(const item of c.details){const d=document.createElement('details'),q=document.createElement('summary'),a=document.createElement('p');q.textContent=item.question;a.textContent=item.answer;d.append(q,a);box.append(d)}}
 if(c.text.detailsTitle)document.querySelector('.faq h2').textContent=c.text.detailsTitle;
+const email=document.querySelector('#contact-email');if(email){email.hidden=!c.contactEmail;email.href='mailto:'+encodeURIComponent(c.contactEmail||'')}const instagram=document.querySelector('#contact-instagram');if(instagram)instagram.href=c.instagram;
 const main=document.querySelector('main');for(const s of c.sections){const el=document.getElementById(s.id)||document.querySelector('.'+s.id);if(el){el.hidden=!s.visible;main.append(el)}}
 document.querySelectorAll('.lookbook-grid [data-product]').forEach(b=>{if(!window.PREVIEW_CATALOG.some(p=>p.id===b.dataset.product))b.hidden=true});
 })();
