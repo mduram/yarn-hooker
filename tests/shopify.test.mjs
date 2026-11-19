@@ -10,3 +10,6 @@ assert.equal(normalize({...p,title:'Nautical print tee'}).collection,'Prints');a
 assert.equal(normalize({...p,variants:{nodes:[{...v('1','80',null),quantityAvailable:null}]}}).inventory,null);
 const denied={message:'denied',path:['products','nodes',0,'variants','nodes',0,'quantityAvailable'],extensions:{code:'ACCESS_DENIED'}};assert.deepEqual(unwrap({data:{products:[]},errors:[denied]}),{products:[]});assert.throws(()=>unwrap({data:{},errors:[{message:'Other API error'}]}));
 console.log('Shopify category mapping, variant prices, size options, unavailable variants, stock limits, preview isolation, and restricted inventory access passed.');
+const customized=globalThis.YHShopify.present([n],[{id:n.id,title:'Website vest',description:'Website copy',hidden:true,images:['/assets/custom.jpg'],position:1}])[0];
+assert.equal(customized.title,'Website vest');assert.equal(customized.hidden,true);assert.equal(customized.images[0],'/assets/custom.jpg');assert.equal(customized.sizes,n.sizes);assert.equal(customized.price,n.price);assert.equal(customized.variants,n.variants);
+assert.equal(globalThis.YHShopify.present([n],[{id:n.id,title:''}])[0].title,n.title);
