@@ -10,7 +10,7 @@
     "heroEyebrow": "crochet, prints, embroidery, more!",
     "heroTitle": "sustainably fashionable",
     "heroDescription": "",
-    "heroButton": "View collection \u2197",
+    "heroButton": "View collection ↗",
     "collectionEyebrow": "AVAILABLE FOR PURCHASE",
     "collectionTitle": "the collection",
     "catalogNote": "Please buy something. My wrists hurt. Please.",
@@ -23,7 +23,7 @@
     "customEyebrow": "CUSTOM PIECES",
     "customTitle": "something special in mind?",
     "customDescription": "I take custom requests! \n\nFor more information, please reach out to me on Instagram or email at remy@yarnhooker.com. ",
-    "customButton": "Get in touch \u2197",
+    "customButton": "Get in touch ↗",
     "footerDescription": "Crochet, prints, and other cool stuff",
     "detailsTitle": "Details."
   },
@@ -488,7 +488,7 @@
     },
     {
       "question": "Can I request a custom piece?",
-      "answer": "Yes! Get in touch with your idea, colours, and sizing to discuss a custom piece."
+      "answer": "Yes! Get in touch with your idea, colors, and sizing to discuss a custom piece."
     },
     {
       "question": "What about shipping and care?",
